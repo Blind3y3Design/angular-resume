@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>AccioCode AngularJS Tutorial - Sorting and Filtering and Ng-Repeat</title>
+	<title>Blind3y3Design Angular JSON Resume</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<!-- <script src="angularjstutorial-deps.js"></script> -->
+	<script src="angularjstutorial-deps.js"></script>
 	<script src="angularjstutorial.js"></script>
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -61,31 +61,29 @@
 	            </div>
 	        </div>
 
-	        <!-- <div class="main-wrapper">
+	        <div class="main-wrapper">
 	            
 	            <section class="section summary-section">
 	                <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
-	                <div class="summary">
-	                    {{{basics.summary}}}
+	                <div class="summary" ng-bind-html="resume.basics.summary | unsafe">
+	                    <!-- {{resume.basics.summary}} -->
 	                </div>
 	            </section>
 	            
 	            <section class="section experiences-section">
 	                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-	                {{#each experience}}
-	                    <div class="item">
+	                	<div data-ng-repeat="experience in resume.experience" class="item">
 	                        <div class="meta">
 	                            <div class="upper-row">
-	                                <h3 class="job-title">{{position}}</h3>
-	                                <div class="time">{{startDate}} - {{endDate}}</div>
+	                                <h3 class="job-title">{{experience.position}}</h3>
+	                                <div class="time">{{experience.startDate}} - {{experience.endDate}}</div>
 	                            </div>
-	                            <div class="company"><a href="{{website}}" target="_blank">{{company}}</a>, {{location}}</div>
+	                            <div class="company"><a href="{{website}}" target="_blank">{{experience.company}}</a>, {{experience.location}}</div>
 	                        </div>
 	                        <div class="details">
-	                            <p>{{summary}}</p>
+	                            <p>{{experience.summary}}</p>
 	                        </div>
 	                    </div>
-	                {{/each}}
 	            </section>
 	            
 	            <section class="section projects-section">
@@ -93,29 +91,25 @@
 	                <div class="intro">
 	                    <p>Projects I have worked on.</p>
 	                </div>
-	                {{#each projects}}
-	                    <div class="item">
-	                        <span class="project-title"><a href="{{url}}">{{name}}</a></span> - <span class="project-tagline">{{summary}}</span>
-	                    </div>
-	                {{/each}}
+                	<div data-ng-repeat="project in resume.projects" class="item">
+                        <span class="project-title"><a href="{{project.url}}">{{project.name}}</a></span> - <span class="project-tagline">{{project.summary}}</span>
+                    </div>
 	            </section>
 	            
 	            <section class="skills-section section">
 	                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
 	                <div class="skillset"> 
-	                    {{#each skills}}       
-	                        <div class="item">
-	                            <h3 class="level-title">{{name}}</h3>
-	                            <div class="level-bar">
-	                                <div class="level-bar-inner" data-level="{{level}}">
-	                                </div>                                      
-	                            </div>                               
-	                        </div>
-	                    {{/each}}
+	                    <div data-ng-repeat="skill in resume.skills" class="item">
+                            <h3 class="level-title">{{skill.name}}</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="{{skill.level}}">
+                                </div>                                      
+                            </div>                               
+                        </div>
 
 	                </div>  
 	            </section>
-	        </div> -->
+	        </div>
 
 		</div>
 	</div>

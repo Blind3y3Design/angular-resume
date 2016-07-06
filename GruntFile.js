@@ -16,6 +16,8 @@ module.exports = function (grunt)
 					'bower_components/jquery/dist/jquery.js',
 					'bower_components/bootstrap/dist/js/bootstrap.js',
 					'bower_components/angularjs/angular.min.js',
+					'bower_components/angular-route/angular-route.min.js',
+					'bower_components/angular-sanitize/angular-sanitize.min.js',
 				],
 				dest: 'src/<%= pkg.name %>-deps.js'
 			},
