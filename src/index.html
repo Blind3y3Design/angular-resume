@@ -1,22 +1,123 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>AccioCode AngularJS Tutorial</title>
+	<title>AccioCode AngularJS Tutorial - Sorting and Filtering and Ng-Repeat</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<script src="resources/js/angularjstutorial-deps.js"></script>
-	<script src="resources/js/angularjstutorial.js"></script>
+	<!-- <script src="angularjstutorial-deps.js"></script> -->
+	<script src="angularjstutorial.js"></script>
 
-	<link rel="stylesheet" href="resources/css/angularjstutorial.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="angularjstutorial.css">
+	<link rel="stylesheet" href="resources/css/styles.css">
+	<link rel="stylesheet" href="resources/css/font-awesome.min.css">
 </head>
 <body>
 
-	<div class="mainContainer">
-		<h1>Features</h1>
-		<h2>Compile</h2>
+	<div class="mainContainer" data-ng-app="ResumeApp">
 
-		
+		<div data-ng-controller="resumeCtrl">
+			
+			<div class="sidebar-wrapper">
+	            <div class="profile-container">
+	                <img class="profile" src="resources/images/profile.png" alt="" />
+	                <h1 class="name">{{resume.basics.name}}</h1>
+	                <h3 class="tagline">{{resume.basics.label}}</h3>
+	            </div>
+	            
+	            <div class="contact-container container-block">
+	                <ul class="list-unstyled contact-list">
+	                    <li data-ng-repeat="contact in resume.basics.contact" class="{{contact.type}}">
+	                    	<i class="fa" data-ng-class="{ 'fa-envelope' : contact.type == 'email', 'fa-phone' : contact.type == 'phone', 'fa-globe' : contact.type == 'website' }"></i>
+                            <a href="{{contact.linkValue}}" target="_blank">{{contact.value}}</a>
+                        </li>
+                        <li data-ng-repeat="profile in resume.basics.profiles" class="{{profile.network}}">
+                        	<i class="fa" data-ng-class="{ 'fa-linkedin' : profile.network == 'Linkedin', 'fa-twitter' : profile.network == 'Twitter', 'fa-medium' : profile.network == 'Medium', 'fa-github' : profile.network == 'Github' }"></i>
+                            <a href="{{profile.url}}" target="_blank">{{profile.linkName}}</a>
+                        </li>
+	                </ul>
+	            </div>
+
+	            <div class="education-container container-block">
+	                <h2 class="container-block-title">Education</h2>
+                    <div class="item">
+	                    <div data-ng-repeat="education in resume.education" class="item">
+	                        <h4 class="degree">{{education.studyType}} in {{education.area}}</h4>
+	                        <h5 class="degree">{{education.focus}}</h5>
+	                        <h5 class="meta">{{education.institution}}</h5>
+	                        <div class="time">{{education.start}} - {{education.end}}</div>
+	                    </div>
+	            	</div>
+            	</div>
+	            
+	            <div class="languages-container container-block">
+	                <h2 class="container-block-title">Languages</h2>
+	                <ul class="list-unstyled interests-list">
+                        <li data-ng-repeat="language in resume.languages">
+                        	{{language.name}} <span class="lang-desc">({{language.level}})</span>
+                    	</li>
+	                </ul>
+	            </div>
+	        </div>
+
+	        <!-- <div class="main-wrapper">
+	            
+	            <section class="section summary-section">
+	                <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+	                <div class="summary">
+	                    {{{basics.summary}}}
+	                </div>
+	            </section>
+	            
+	            <section class="section experiences-section">
+	                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+	                {{#each experience}}
+	                    <div class="item">
+	                        <div class="meta">
+	                            <div class="upper-row">
+	                                <h3 class="job-title">{{position}}</h3>
+	                                <div class="time">{{startDate}} - {{endDate}}</div>
+	                            </div>
+	                            <div class="company"><a href="{{website}}" target="_blank">{{company}}</a>, {{location}}</div>
+	                        </div>
+	                        <div class="details">
+	                            <p>{{summary}}</p>
+	                        </div>
+	                    </div>
+	                {{/each}}
+	            </section>
+	            
+	            <section class="section projects-section">
+	                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+	                <div class="intro">
+	                    <p>Projects I have worked on.</p>
+	                </div>
+	                {{#each projects}}
+	                    <div class="item">
+	                        <span class="project-title"><a href="{{url}}">{{name}}</a></span> - <span class="project-tagline">{{summary}}</span>
+	                    </div>
+	                {{/each}}
+	            </section>
+	            
+	            <section class="skills-section section">
+	                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+	                <div class="skillset"> 
+	                    {{#each skills}}       
+	                        <div class="item">
+	                            <h3 class="level-title">{{name}}</h3>
+	                            <div class="level-bar">
+	                                <div class="level-bar-inner" data-level="{{level}}">
+	                                </div>                                      
+	                            </div>                               
+	                        </div>
+	                    {{/each}}
+
+	                </div>  
+	            </section>
+	        </div> -->
+
+		</div>
 	</div>
 
 </body>

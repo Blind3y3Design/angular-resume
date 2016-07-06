@@ -1,0 +1,164 @@
+{
+  "basics": {
+    "name": "Adam Sedwick",
+    "label": "Front-End Architect",
+    "picture": "",
+    "contact": [
+      {
+        "type": "email",
+        "linkValue": "mailto:asedwick@blind3y3design.com",
+        "value": "asedwick@blind3y3design.com"
+      },
+      {
+        "type": "phone",
+        "linkValue": "tel:+1-630-291-5392",
+        "value": "(630) 291-5392"
+      },
+      {
+        "type": "website",
+        "linkValue": "http://blind3y3design.github.io",
+        "value": "http://blind3y3design.github.io"
+      }
+    ],
+    "summary": "<p>I have been developing modern standards-complians web sites for the past 6 years. Over the years, I have worked with many methodologies, frameworks, and architectures. I currently focus on performant, usable, and accessible web-based products.</p><p>My first job in the web was for an e-commerce based advertising agency. In my time there we focused on providing a wide range of products and experiences for our clients. Our goal was to make performant and stable sites that allowed the users to easily and quickly purchase the products they desired.</p><p>In 2014, I was given the opportunity to work with an amazing team of developers on a small team that had the freedom to explore new technologies and ideas while still being backed by a stable and reliable company. It was at this company that I got to grow my management and User Experience skills. We had the ability to create our own internal teams and manage ourselves indepentently. This allowed for each team member to take on a larger role and have more of a sense of ownership over the final product(s).</p><p>In the last few years I have had the privelege to work with a wide range of clients such as: <a href='https:\/\/www.qualcomm.com' target='_blank'>Qualcomm</a>, <a href='https:\/\/www.att.com' target='_blank'>AT&amp;T</a>, <a href='https:\/\/www.americanexpress.com' target='_blank'>American Express</a>, <a href='https:\/\/oneworldobservatory.com' target='_blank'>One World Observatory</a>, and some of Broadway&rsquo;s hit shows including <a href='http:\/\/schoolofrockthemusical.com' target='_blank'>School of Rock</a> and <a href='http:\/\/www.wickedthemusical.com' target='_blank'>Wicked</a>.</p>",
+    "location": {
+      "address": "2508 Hickory rd.",
+      "postalCode": "60430",
+      "city": "Homewood",
+      "countryCode": "US",
+      "region": "Illinois"
+    },
+    "profiles": [
+      {
+        "network": "Linkedin",
+        "username": "Blind3y3design",
+        "url": "https://www.linkedin.com/in/blind3y3design",
+        "linkName": "linkedin.com/in/blind3y3design"
+      },
+      {
+        "network": "Twitter",
+        "username": "Blind3y3design",
+        "url": "https://twitter.com/blind3y3design",
+        "linkName": "@blind3y3design"
+      },
+      {
+        "network": "Medium",
+        "username": "Blind3y3design",
+        "url": "https://medium.com/@blind3y3design",
+        "linkName": "@blind3y3design"
+      },
+      {
+        "network": "Github",
+        "username": "Blind3y3design",
+        "url": "https://github.com/Blind3y3Design",
+        "linkName": "github.com/Blind3y3Design"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Illinois State University",
+      "area": "Arts Technology",
+      "studyType": "Bachelor",
+      "focus": "Interactive Design and Development",
+      "start": "2011",
+      "end": "2012"
+    },
+    {
+      "institution": "Elgin Community College",
+      "area": "Art",
+      "studyType": "Associates",
+      "focus": "Graphic Design",
+      "start": "2009",
+      "end": "2011"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Native speaker"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Situation Interactive",
+      "position": "Web Developer",
+      "location": "New York, NY",
+      "website": "http://www.situationinteractive.com/",
+      "startDate": "2015",
+      "endDate": "2016",
+      "summary": "Wrote maintainable and extensible code in a team environment. Modified existing software to correct errors, upgrade interfaces and improve performance. Worked effectively with design teams to ensure software solutions elevated client side experience."
+    },
+    {
+      "company": "BrandWizard",
+      "position": "UI Developer & Tech Lead",
+      "location": "New York, NY",
+      "website": "http://www.brandwizard.com/",
+      "startDate": "2014",
+      "endDate": "2015",
+      "summary": "Implemented designs, including experimentation and multiple iterations. Consulted regularly with customers on project status, proposals and technical issues. Directed software design and development while remaining focused on client needs."
+    },
+    {
+      "company": "Aisle Rocket Studios",
+      "position": "Front-End Developer",
+      "location": "Palatine, IL",
+      "website": "http://aislerocket.com/",
+      "startDate": "2013",
+      "endDate": "2014",
+      "summary": "Building interactive experiences for brands to engage their customers outside of the standard e-commerce platforms. Front-End and UX development of high traffic e-commerce websites on multiple platforms. Building and maintaining custom Javascript libraries allowing clients easy access and control over site inventory."
+    }
+  ],
+  "projects": [
+    {
+      "name": "JSON Resume",
+      "url": "http://blind3y3design.github.io/json-resume",
+      "summary": "Using JSON data to populate a Handlebars template resume" 
+    },
+    {
+      "name": "React Portfolio",
+      "url": "https://github.com/Blind3y3Design/learning-react",
+      "summary": "Exploring React by building out a portfolio site with React and Redux" 
+    },
+    {
+      "name": "Situation Interactive Code Guide",
+      "url": "http://blind3y3design.github.io/sitch.co-code_guide/",
+      "summary": "Mock-up of code guidelines for internal use at Situation Interactive" 
+    },
+    {
+      "name": "Situation Interactive Pattern Library",
+      "url": "http://blind3y3design.github.io/Sitch-pattern-lib/",
+      "summary": "Proof of concept mock-up for an internal pattern library at Situation Interactive" 
+    },
+    {
+      "name": "Blind3y3Design",
+      "url": "http://blind3y3design.github.io/",
+      "summary": "Blog and Portfolio site for Blind3y3Design" 
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML5 & CSS (Sass)",
+      "level": "98%"
+    },
+    {
+      "name": "Javascript & jQuery",
+      "level": "75%"
+    },
+    {
+      "name": "php",
+      "level": "50%"
+    },
+    {
+      "name": "Wireframing & Prototyping",
+      "level": "90%"
+    },
+    {
+      "name": "User Testing",
+      "level": "60%"
+    },
+    {
+      "name": "Agile",
+      "level": "75%"
+    }
+  ]
+}
